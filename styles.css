@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    
+    padding: 1em;
+}
+
+#page_header
+{
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+}
+
+#tools
+{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.tools-item1
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#color
+{
+    margin: 0 auto;
+}
+
+button
+{
+    width: 100%;
+    height: 2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: rgb(204, 202, 202);
+    border-radius: 10px;
+}
+
+#range
+{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#sketch
+{
+    display: grid;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: 2px 2px 15px black;
+}
+
+#ColorPicker
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#ColorPicker::-webkit-color-swatch
+{
+    border-radius: 50%;
+    border: none;
+}
+
+#scale
+{
+    -webkit-appearance: none;
+    background-color: #ededed;
+    width: 100%;
+}
+  
+#scale::-webkit-slider-runnable-track
+{
+    height: 15px;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    background: #fefefe;
+}
+  
+#scale::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: -6px;
+    background: #333333;
+}
+  
+
+#scale_label
+{
+    width: 100%;
+}
+
+button
+{
+    transition: transform 0.5s, border 0.5s, color 0.5s, background-color 0.5s;
+}
+
+button:hover
+{
+    border: 1px solid grey;
+    background-color: #2b2a2a;
+    color: white;
+    transform: scale(1.05);
+}
+/* FOOTER */
+footer
+{
+    text-align: center;
+    padding: 1em;
+}
+
+#author_name
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h4
+{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.linkedin, .github
+{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.linkedin
+{
+    background-image: url("linkedin.png");
+    background-size: cover;
+}
+  
+.github
+{
+    background-image: url("github.png");
+    background-size: cover;
+}
+
+
+@media (max-width: 715px)
+{
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    button
+    {
+        height: 2.3em;
+        min-width: fit-content;
+    }
+    #tools
+    {
+        justify-content: space-around;
+        width: fit-content;
+        flex-direction: row;
+        width: 100%;
+    }
+    .tools-item1
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tools-item1, .tools-item
+    {
+        flex:1;
+    }
+    main, body
+    {
+        min-width: fit-content;
+    }
+
+}
