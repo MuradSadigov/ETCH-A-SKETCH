@@ -3,7 +3,7 @@
 
 - LIVE CODE CODE-PEN [ETCH-A-SKETCH](https://codepen.io/muradsadigov/pen/KKogGZW)
 - LIVE CODE [ETCH-A-SKETCH](https://etch-a-sketch-by-murad.netlify.app/)
-)
+
 
 - 🌱 I’m currently learning **Js, CSS, HTML, Python**
 
